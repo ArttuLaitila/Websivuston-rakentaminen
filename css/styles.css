@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #0284c7;   /* Kirkas tekninen sininen (otsikot) */
+    --secondary-color: #f8fafc; /* Erittäin vaalea harmaa (sivun tausta) */
+    --accent-color: #f97316;    /* Oranssi (huomioväri ja painikkeet) */
+    --text-color: #1e293b;      /* Tummanharmaa teksti */
+    --dark-color: #0f172a;      /* Tumma siniharmaa (header ja footer) */
+}
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: var(--dark-color);
+    padding: 1rem;
+}
+h1 {
+    color: var(--primary-color);
+}
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+.hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.hero-text {
+    flex: 1 1 300px;
+}
+.hero-text h2 {
+    color: var(--primary-color);
+}
+.hero-text p {
+    line-height: 1.6;
+}
+.hero img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0.75rem 0 0 0;
+}
+
+nav a {
+    display: inline-block;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
