@@ -68,3 +68,29 @@ nav a.active {
     background-color: var(--primary-color);
     color: #ffffff;
 }
+header {
+    background-color: var(--dark-color);
+    padding: 1.25rem;
+}
+header h1 {
+    margin: 0;
+}
+header nav a {
+    color: #ffffff;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.65rem 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
