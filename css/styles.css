@@ -94,3 +94,38 @@ header nav a {
     transform: translateY(-2px);
     opacity: 0.92;
 }
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.card-content {
+    padding: 1.25rem;
+}
+
+.card-content h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 0;
+}
